@@ -326,10 +326,17 @@ dropdownState.addEventListener("click", () => {
 // Load states when the page is ready
 loadStates();
 
-const regBtn = document.querySelector(".registerBtn");
+const registerButton = document.querySelector(".registerBtn");
+const successMessage = document.querySelector(".success");
 
-const success = document.querySelector(".success");
+registerButton.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent form submission for demonstration
 
-const form = document.querySelector(".regForm");
+  // Show the success message
+  successMessage.classList.add("show");
 
-
+  // Hide the success message after 3 seconds (3000ms)
+  setTimeout(() => {
+    successMessage.classList.remove("show");
+  }, 3000);
+});

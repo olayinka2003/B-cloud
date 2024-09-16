@@ -10,25 +10,30 @@ body {
   font-family: Raleway;
 }
 
+
+
 h1 {
   width: 80%;
   margin: auto;
+  margin-top: 60px;
 }
 
 label {
   color: rgba(9, 21, 71, 1);
   font-size: 16px;
   font-weight: 500;
+  text-align: start;
 }
 
 form {
   width: 80%;
   margin: auto;
-  margin: top;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
+  position: relative;
+  align-content: center;
 }
 
 form input {
@@ -326,13 +331,28 @@ form select {
 
 .success {
   background: rgba(255, 255, 255, 1);
-  width: 90%;
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  
+  border-radius: 10px;
+  position: absolute; /* Make the success message overlay the form */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10; /* Ensure it appears above other content */
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in effect */
+}
+
+.success.show {
+  visibility: visible; /* Display the success message */
+  opacity: 1; /* Fade it in */
 }
 
 .check {
@@ -347,8 +367,8 @@ form select {
 }
 
 .success p {
-  padding-left: 200px;
-  padding-right: 200px;
+  /* padding-left: 200px;
+  padding-right: 200px; */
   font-weight: 400;
   text-align: center;
 }

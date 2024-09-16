@@ -11,8 +11,7 @@ body {
 }
 
 .header {
-   background: linear-gradient(297.03deg, #3DB3B9 42.35%, #1B5053 42.43%);
-
+  background: linear-gradient(297.03deg, #3db3b9 42.35%, #1b5053 42.43%);
 }
 
 header {
@@ -229,6 +228,8 @@ header img {
   font-weight: 400;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .learning {
@@ -457,7 +458,7 @@ header img {
   gap: 10px;
   justify-content: center;
   border: none;
- cursor: pointer;
+  cursor: pointer;
   width: 15%;
   margin: auto;
   margin-top: 20px;
