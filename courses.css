@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Colors-Mint: rgba(0, 199, 190, 1);
+}
+
+body {
+  font-family: Raleway;
+}
+
+.courses {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.course {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses h2 {
+  text-align: center;
+  /* display: none; */
+}
+
+.courses h2::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background: var(--Colors-Mint);
+  margin: 10px auto 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -5;
+}
+
+.frontend {
+  position: relative;
+  margin-top: 70px;
+}
+
+.front-end {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 205vh;
+}
+
+.front-end img {
+  width: 100%;
+}
+
+.niche h3 {
+  padding: 10px;
+}
+.niche ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  padding: 10px;
+}
