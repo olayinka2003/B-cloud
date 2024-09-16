@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway;
+}
+
+h1 {
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  color: rgba(9, 21, 71, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  margin: top;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  width: 80%;
+}
+
+form select {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  width: 80%;
+}
+
+/* select:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+} */
+
+.custom-dropdown {
+  position: relative;
+  width: 80%;
+  cursor: pointer;
+}
+
+.selected-option {
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+
+.options li {
+  padding: 10px;
+  margin-left: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  /* background-color: #fff; */
+  transition: background-color 0.3s ease;
+}
+
+.options li:last-child {
+  border-bottom: none;
+}
+
+.options li.active {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.custom-dropdown.open .options {
+  display: block;
+}
+
+.high {
+  background: rgba(3, 17, 99, 1);
+  color: white;
+}
+
+.countryy {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.custom-country {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-country {
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+}
+
+.dropdown-country-selected {
+  padding: 10px;
+
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-country-options {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-country-options li {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.dropdown-country-options li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-country-options li:first-child {
+  background: rgba(3, 17, 99, 1);
+  color: white;
+  width: 100%;
+}
+
+.dropdown-country.open .dropdown-country-options {
+  display: block;
+}
+
+.dropdown-state {
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+}
+
+.custom-state {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropdown-state-selected {
+  padding: 10px;
+
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-state-options {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-state-options li {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.dropdown-state-options li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-state-options li:first-child {
+  background: rgba(3, 17, 99, 1);
+  color: white;
+  width: 100%;
+}
+
+.dropdown-state.open .dropdown-state-options {
+  display: block;
+}
+
+.course-dropdown {
+  position: relative;
+  width: 80%;
+  cursor: pointer;
+}
+
+.selected-course {
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.course-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+
+.course-options li {
+  padding: 10px;
+  margin-left: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  /* background-color: #fff; */
+  transition: background-color 0.3s ease;
+}
+
+.course-options li:last-child {
+  border-bottom: none;
+}
+
+.options li.active {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.course-dropdown.open .course-options {
+  display: block;
+}
+
+.confirm {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.confirm div {
+  display: flex;
+  gap: 20px;
+}
+
+.confirm button {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  /* margin: auto; */
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(68, 201, 196, 1);
+  border-radius: 10px;
+}
+
+.check {
+  background-image: url("img/image_details.svg");
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+
+.success {
+  background: rgba(255, 255, 255, 1);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+.check {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.check img {
+  display: flex;
+  justify-content: center;
+}
+
+.success p {
+  padding-left: 200px;
+  padding-right: 200px;
+  font-weight: 400;
+  text-align: center;
+}
