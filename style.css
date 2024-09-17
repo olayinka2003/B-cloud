@@ -8,6 +8,7 @@
 
 body {
   font-family: Raleway;
+  position: relative;
 }
 
 .header {
@@ -26,6 +27,7 @@ header {
   width: 90%;
   margin: 0 auto;
   padding-top: 1rem;
+  position: relative;
 }
 
 .burger {
@@ -34,6 +36,36 @@ header {
 
 header img {
   width: 150px;
+}
+
+.links{
+  position: relative;
+  overflow: hidden;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(161, 228, 225, 1);
+  height: 50vh;
+  width: 100%; 
+  max-width: 300px; 
+  position: absolute;
+  top: 10px;
+  right: 0; 
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); 
+}
+
+.links ul.active {
+  transform: translateX(0); 
 }
 
 .nav {
@@ -715,7 +747,6 @@ form button {
 
   .main {
     display: flex;
-    /* flex-direction: column-reverse; */
   }
 
   .trans {
@@ -872,6 +903,324 @@ form button {
 
   .process {
     display: flex;
+    padding-left: 0;
+  }
+
+  .list {
+    width: 100%;
+    padding: 5px;
+  }
+  .girl {
+    width: 100%;
+  }
+
+  .types {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .fees {
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+  }
+  .fees h1 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  .fees h1::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 4px;
+    background: var(--Colors-Mint, rgba(0, 199, 190, 1));
+    margin: 10px auto 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    z-index: -5;
+  }
+
+  .fees div {
+    width: 100%;
+  }
+
+  .fees p {
+    line-height: 1.5em;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    font-size: 0.7rem;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .footer .top {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+    gap: 20px;
+  }
+
+  .benefit h4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .benefit ul {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .benefit li {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+
+  .leftt {
+    padding-left: 0;
+  }
+
+  .framee {
+    background: linear-gradient(91.82deg, #091547 1.54%, #1633ad 94.59%);
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .framee button {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(68, 201, 196, 1);
+    border-radius: 10px;
+  }
+
+  .sub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .sub span,
+  .sub form,
+  .sub socials {
+    width: 100%;
+  }
+
+  .le {
+    margin-left: 0;
+  }
+
+  .r {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .down {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 0 10px;
+  }
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .trans {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 70%;
+  }
+
+  .start a {
+    width: 100%;
+  }
+
+  .main h2 {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .cloud {
+    color: rgba(70, 186, 205, 1);
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .start {
+    padding: 10px, 0 0;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about p {
+    width: 100%;
+  }
+  .reasons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 1rem;
+  }
+
+  .reasons div {
+    width: 100%;
+  }
+
+  .reasons div img {
+    margin-left: 110px;
+  }
+  .co {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .right {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .course {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .niche {
+    width: 100%;
+  }
+
+  .front-end {
+    width: 100%;
+  }
+
+  .frame {
+    display: none;
+  }
+
+  .courses h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .courses {
+    padding: 0px;
+  }
+  .courses h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: var(--Colors-Mint, rgba(0, 199, 190, 1));
+    margin: 10px auto 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: -5;
+  }
+
+  .cover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover div {
+    width: 100%;
+  }
+
+  .learning h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: var(--Colors-Mint, rgba(0, 199, 190, 1));
+    margin: 10px auto 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    /* z-index: -5; */
+  }
+
+  .pro h1 {
+    font-size: 1.1rem;
+  }
+
+  .pro img {
+    width: 50px;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column-reverse;
     padding-left: 0;
   }
 

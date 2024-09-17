@@ -26,7 +26,6 @@ courseOptions.forEach((option) => {
   });
 });
 
-// Array of countries
 const countries = [
   "Select Your Country",
   "Afghanistan",
@@ -233,27 +232,23 @@ const selectedCountryOption = document.querySelector(
 const countryOptionsList = document.querySelector(".dropdown-country-options");
 
 function loadCountries() {
-  countryOptionsList.innerHTML = ""; // Clear existing options
+  countryOptionsList.innerHTML = "";
 
   countries.forEach((country) => {
     const li = document.createElement("li");
     li.textContent = country;
     countryOptionsList.appendChild(li);
 
-    // Add click event listener to each country option
     li.addEventListener("click", () => {
-      selectedCountryOption.textContent = country; // Update selected option
-      // dropdownCountry.classList.remove('open');
+      selectedCountryOption.textContent = country;
     });
   });
 }
 
-// Toggle dropdown visibility on click
 dropdownCountry.addEventListener("click", () => {
   dropdownCountry.classList.toggle("open");
 });
 
-// Call the function to load the countries
 loadCountries();
 
 const States = [
@@ -296,47 +291,42 @@ const States = [
   "Abuja",
 ];
 
-// Selecting elements
 const dropdownState = document.querySelector(".dropdown-state");
 const selectedStateOption = document.querySelector(".dropdown-state-selected");
 const stateOptionsList = document.querySelector(".dropdown-state-options");
 
 function loadStates() {
-  stateOptionsList.innerHTML = ""; // Clear existing options
+  stateOptionsList.innerHTML = "";
 
-  // Loop through states and create list items
   States.forEach((state) => {
     const li = document.createElement("li");
     li.textContent = state;
     stateOptionsList.appendChild(li);
 
-    // Add click event listener to each state option
     li.addEventListener("click", () => {
-      selectedStateOption.textContent = state; // Set the selected state
-      //   dropdownState.classList.remove("open");
+      selectedStateOption.textContent = state;
     });
   });
 }
 
-// Toggle dropdown visibility when clicked
 dropdownState.addEventListener("click", () => {
   dropdownState.classList.toggle("open");
 });
 
-// Load states when the page is ready
 loadStates();
 
 const registerButton = document.querySelector(".registerBtn");
 const successMessage = document.querySelector(".success");
 
 registerButton.addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent form submission for demonstration
+  event.preventDefault();
 
-  // Show the success message
   successMessage.classList.add("show");
 
-  // Hide the success message after 3 seconds (3000ms)
   setTimeout(() => {
     successMessage.classList.remove("show");
   }, 3000);
 });
+
+console.log("goodbye");
+
