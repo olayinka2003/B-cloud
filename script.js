@@ -328,5 +328,12 @@ registerButton.addEventListener("click", (event) => {
   }, 3000);
 });
 
-console.log("goodbye");
+const menuToggle = document.querySelector('.burger');
+const linksUl = document.querySelector('.links ul');
+
+
+
+
+console.log(menuToggle);
+
 

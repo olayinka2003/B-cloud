@@ -82,6 +82,28 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .course {
+    width: 100%;
+    flex-direction: column;
+    gap: 300px;
+    margin-top: 0px;
+  }
+
+  .frontend {
+    width: 100%;
+  }
+
+  .front-end {
+    width: 100%;
+    height: auto;
+  }
+
+  .frontend img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 320px) {
   .course {
     width: 100%;
