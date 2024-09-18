@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -36,6 +35,12 @@ header {
 
 .burger {
   display: none;
+  cursor: pointer;
+}
+
+.burger i {
+  color: white;
+ font-size: 1.5rem;
 }
 
 header img {
@@ -48,7 +53,7 @@ header img {
   flex-direction: column;
   gap: 20px;
   background: rgba(161, 228, 225, 1);
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   max-width: 300px;
   position: absolute;
@@ -144,7 +149,7 @@ ul a {
   display: flex;
   gap: 30px;
   flex-direction: column;
-  margin-left: 200px;
+  margin-left: 120px;
   width: 70%;
 }
 
@@ -158,13 +163,14 @@ ul a {
   color: black;
   padding: 5px;
   border-radius: 5px;
-  width: 35%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   gap: 10px;
   background: rgba(161, 228, 225, 1);
+  text-wrap: nowrap;
 }
 
 .cloud {
@@ -242,7 +248,7 @@ ul a {
 }
 
 .reasons div img {
-  width: 15%;
+  width: 45px;
   margin-left: 30px;
   margin-top: 20px;
 }
@@ -761,9 +767,6 @@ form button {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 0 10px;
-  }
   .nav {
     display: flex;
   }
@@ -826,7 +829,7 @@ form button {
   }
 
   .reasons div img {
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   .co {
     display: flex;
@@ -1074,10 +1077,7 @@ form button {
   }
 }
 
-@media (max-width: 540px) {
-  body {
-    padding: 0 10px;
-  }
+@media (max-width: 620px) {
   .nav {
     display: none;
   }
@@ -1138,11 +1138,13 @@ form button {
 
   .reasons div {
     width: 100%;
+    padding: 0 10px;
+    align-items: center;
   }
 
-  .reasons div img {
-    margin-left: 110px;
-  }
+  /* .reasons div img {
+    align-items: center;
+  } */
   .co {
     display: flex;
     flex-direction: column;
@@ -1296,13 +1298,12 @@ form button {
     text-align: center;
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 100%;
     margin-top: -30px;
   }
 
   #footer .top {
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1391,12 +1392,8 @@ form button {
     gap: 20px;
   }
 }
-
+/* 
 @media (max-width: 320px) {
-  body {
-    padding: 0 10px;
-  }
-
   .nav {
     display: none;
   }
@@ -1457,10 +1454,13 @@ form button {
 
   .reasons div {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .reasons div img {
-    margin-left: 110px;
+    align-items: center;
   }
   .co {
     display: flex;
@@ -1552,7 +1552,6 @@ form button {
     position: absolute;
     top: 45%;
     left: 25%;
-    /* z-index: -5; */
   }
 
   .pro h1 {
@@ -1621,7 +1620,6 @@ form button {
   }
 
   #footer .top {
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1709,4 +1707,4 @@ form button {
     flex-direction: column-reverse;
     gap: 20px;
   }
-}
+} */
