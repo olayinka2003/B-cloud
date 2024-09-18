@@ -40,7 +40,7 @@ header {
 
 .burger i {
   color: white;
- font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 header img {
@@ -199,7 +199,7 @@ ul a {
   color: white;
   padding: 2rem;
   text-align: center;
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -895,7 +895,7 @@ form button {
     border-radius: 5px;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 40%;
     z-index: -5;
   }
 
@@ -918,7 +918,7 @@ form button {
     border-radius: 5px;
     position: absolute;
     top: 45%;
-    left: 25%;
+    left: 40%;
     /* z-index: -5; */
   }
 
@@ -967,8 +967,8 @@ form button {
     margin: 10px auto 0;
     border-radius: 5px;
     position: absolute;
-    top: 45%;
-    left: 15%;
+    top: 25%;
+    left: 35%;
     z-index: -5;
   }
 
@@ -981,7 +981,7 @@ form button {
     text-align: center;
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 100%;
     margin-top: -30px;
   }
@@ -1138,7 +1138,7 @@ form button {
 
   .reasons div {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 10px 10px;
     align-items: center;
   }
 
